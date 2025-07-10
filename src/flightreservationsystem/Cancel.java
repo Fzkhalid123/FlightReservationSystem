@@ -20,8 +20,9 @@ public class Cancel extends JFrame implements ActionListener {
         Random random = new Random();
 
         JLabel heading = new JLabel("CANCELLATION");
-        heading.setBounds(180, 20, 250, 35);
+        heading.setBounds(220, 20, 250, 35);
         heading.setFont(new Font("Tahoma", Font.PLAIN, 32));
+        heading.setForeground(Color.BLUE);
         add(heading);
 
         ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("FlightReservationSystem/icons1/icons/cancel.jpg"));

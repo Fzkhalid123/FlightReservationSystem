@@ -10,29 +10,29 @@ import java.sql.ResultSet;
 public class JourneyDetails extends JFrame implements ActionListener {
 
         JTable table;
-        JTextField  pnr;
-        JButton show;
+        JTextField  tfPnr;
+        JButton btnShow;
 
         public JourneyDetails() {
 
             getContentPane().setBackground(Color.WHITE);
             setLayout(null);
 
-            JLabel lblpnr = new JLabel("PNR Details");
-            lblpnr.setFont(new Font("Tahoma", Font.PLAIN, 16));
-            lblpnr.setBounds(50, 50, 100, 25);
-            add(lblpnr);
+            JLabel lblPnr = new JLabel("PNR Details");
+            lblPnr.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            lblPnr.setBounds(50, 50, 100, 25);
+            add(lblPnr);
 
-            pnr = new JTextField();
-            pnr.setBounds(160, 50, 120, 25);
-            add(pnr);
+            tfPnr = new JTextField();
+            tfPnr.setBounds(160, 50, 120, 25);
+            add(tfPnr);
 
-            show = new JButton("Show Details");
-            show.setBackground(Color.BLACK);
-            show.setForeground(Color.WHITE);
-            show.setBounds(290, 50, 120, 25);
-            show.addActionListener(this);
-            add(show);
+            btnShow = new JButton("Show Details");
+            btnShow.setBackground(Color.BLACK);
+            btnShow.setForeground(Color.WHITE);
+            btnShow.setBounds(290, 50, 120, 25);
+            btnShow.addActionListener(this);
+            add(btnShow);
 
             table = new JTable();
 
@@ -53,7 +53,7 @@ public class JourneyDetails extends JFrame implements ActionListener {
             try {
                 DBConnection connection = new DBConnection();
 
-                ResultSet rs = connection.s.executeQuery("select * from reservation where PNR = '" + pnr.getText() + "'");
+                ResultSet rs = connection.s.executeQuery("select * from reservation where PNR = '" + tfPnr.getText() + "'");
 
                 if (!rs.isBeforeFirst()) {
                 JOptionPane.showMessageDialog(null, "Invalid PNR");

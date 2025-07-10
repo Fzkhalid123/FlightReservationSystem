@@ -10,9 +10,9 @@ import java.util.*;
 public class BookFlight extends JFrame implements ActionListener {
 
 
-    JTextField tfaadhar;
-    JLabel tfname, tfnationality, tfaddress, labelgender, labelfname, labelfcode;
-    JButton bookflight, fetchButton, flight;
+    JTextField tfAadhar;
+    JLabel lblName, lblNationality, lblAddress, lblGender, lblFlightName, lblFlightCode;
+    JButton btnBookFlight, btnFetchButton, btnFlight;
     Choice source, destination;
     JDateChooser dcdate;
 
@@ -32,66 +32,66 @@ public class BookFlight extends JFrame implements ActionListener {
         lblaadhar.setFont(new Font("Tahoma", Font.PLAIN, 16));
         add(lblaadhar);
 
-        tfaadhar = new JTextField();
-        tfaadhar.setBounds(220, 80, 150, 25);
-        add(tfaadhar);
+        tfAadhar = new JTextField();
+        tfAadhar.setBounds(220, 80, 150, 25);
+        add(tfAadhar);
 
-        fetchButton = new JButton("Fetch User");
-        fetchButton.setBackground(Color.BLACK);
-        fetchButton.setForeground(Color.WHITE);
-        fetchButton.setBounds(380, 80, 120, 25);
-        fetchButton.addActionListener(this);
-        add(fetchButton);
+        btnFetchButton = new JButton("Fetch User");
+        btnFetchButton.setBackground(Color.BLACK);
+        btnFetchButton.setForeground(Color.WHITE);
+        btnFetchButton.setBounds(380, 80, 120, 25);
+        btnFetchButton.addActionListener(this);
+        add(btnFetchButton);
 
         JLabel lblname = new JLabel("Name");
         lblname.setBounds(60, 130, 150, 25);
         lblname.setFont(new Font("Tahoma", Font.PLAIN, 16));
         add(lblname);
 
-        tfname = new JLabel();
-        tfname.setBounds(220, 130, 150, 25);
-        add(tfname);
+        lblName = new JLabel();
+        lblName.setBounds(220, 130, 150, 25);
+        add(lblName);
 
         JLabel lblnationality = new JLabel("Nationality");
         lblnationality.setBounds(60, 180, 150, 25);
         lblnationality.setFont(new Font("Tahoma", Font.PLAIN, 16));
         add(lblnationality);
 
-        tfnationality = new JLabel();
-        tfnationality.setBounds(220, 180, 150, 25);
-        add(tfnationality);
+        lblNationality = new JLabel();
+        lblNationality.setBounds(220, 180, 150, 25);
+        add(lblNationality);
 
         JLabel lbladdress = new JLabel("Address");
         lbladdress.setBounds(60, 230, 150, 25);
         lbladdress.setFont(new Font("Tahoma", Font.PLAIN, 16));
         add(lbladdress);
 
-        tfaddress = new JLabel();
-        tfaddress.setBounds(220, 230, 150, 25);
-        add(tfaddress);
+        lblAddress = new JLabel();
+        lblAddress.setBounds(220, 230, 150, 25);
+        add(lblAddress);
 
         JLabel lblgender = new JLabel("Gender");
         lblgender.setBounds(60, 280, 150, 25);
         lblgender.setFont(new Font("Tahoma", Font.PLAIN, 16));
         add(lblgender);
 
-        labelgender = new JLabel("Gender");
-        labelgender.setBounds(220, 280, 150, 25);
-        add(labelgender);
+        lblGender = new JLabel("Gender");
+        lblGender.setBounds(220, 280, 150, 25);
+        add(lblGender);
 
-        JLabel lblsource = new JLabel("Source");
-        lblsource.setBounds(60, 330, 150, 25);
-        lblsource.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        add(lblsource);
+        JLabel lblSource = new JLabel("Source");
+        lblSource.setBounds(60, 330, 150, 25);
+        lblSource.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        add(lblSource);
 
         source = new Choice();
         source.setBounds(220, 330, 150, 25);
         add(source);
 
-        JLabel lbldest = new JLabel("Destination");
-        lbldest.setBounds(60, 380, 150, 25);
-        lbldest.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        add(lbldest);
+        JLabel lblDestination = new JLabel("Destination");
+        lblDestination.setBounds(60, 380, 150, 25);
+        lblDestination.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        add(lblDestination);
 
         destination = new Choice();
         destination.setBounds(220, 380, 150, 25);
@@ -110,30 +110,30 @@ public class BookFlight extends JFrame implements ActionListener {
             e.printStackTrace();
         }
 
-        flight = new JButton("Fetch Flights");
-        flight.setBackground(Color.BLACK);
-        flight.setForeground(Color.WHITE);
-        flight.setBounds(380, 380, 120, 25);
-        flight.addActionListener(this);
-        add(flight);
+        btnFlight = new JButton("Fetch Flights");
+        btnFlight.setBackground(Color.BLACK);
+        btnFlight.setForeground(Color.WHITE);
+        btnFlight.setBounds(380, 380, 120, 25);
+        btnFlight.addActionListener(this);
+        add(btnFlight);
 
-        JLabel lblfname = new JLabel("Flight Name");
-        lblfname.setBounds(60, 430, 150, 25);
-        lblfname.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        add(lblfname);
+        JLabel lblflightname = new JLabel("Flight Name");
+        lblflightname.setBounds(60, 430, 150, 25);
+        lblflightname.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        add(lblflightname);
 
-        labelfname = new JLabel();
-        labelfname.setBounds(220, 430, 150, 25);
-        add(labelfname);
+        lblFlightName = new JLabel();
+        lblFlightName.setBounds(220, 430, 150, 25);
+        add(lblFlightName);
 
-        JLabel lblfcode = new JLabel("Flight Code");
-        lblfcode.setBounds(60, 480, 150, 25);
-        lblfcode.setFont(new Font("Tahoma", Font.PLAIN, 16));
-        add(lblfcode);
+        JLabel lblflightcode = new JLabel("Flight Code");
+        lblflightcode.setBounds(60, 480, 150, 25);
+        lblflightcode.setFont(new Font("Tahoma", Font.PLAIN, 16));
+        add(lblflightcode);
 
-        labelfcode = new JLabel();
-        labelfcode.setBounds(220, 480, 150, 25);
-        add(labelfcode);
+        lblFlightCode = new JLabel();
+        lblFlightCode.setBounds(220, 480, 150, 25);
+        add(lblFlightCode);
 
         JLabel lbldate = new JLabel("Date of Travel");
         lbldate.setBounds(60, 530, 150, 25);
@@ -152,12 +152,12 @@ public class BookFlight extends JFrame implements ActionListener {
         lblimage.setBounds(550, 80, 500, 410);
         add(lblimage);
 
-        bookflight = new JButton("Book Flight");
-        bookflight.setBackground(Color.BLACK);
-        bookflight.setForeground(Color.WHITE);
-        bookflight.setBounds(220, 580, 150, 25);
-        bookflight.addActionListener(this);
-        add(bookflight);
+        btnBookFlight = new JButton("Book Flight");
+        btnBookFlight.setBackground(Color.BLACK);
+        btnBookFlight.setForeground(Color.WHITE);
+        btnBookFlight.setBounds(220, 580, 150, 25);
+        btnBookFlight.addActionListener(this);
+        add(btnBookFlight);
 
 
         setSize(1100, 700);
@@ -167,62 +167,76 @@ public class BookFlight extends JFrame implements ActionListener {
     }
 
     public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == fetchButton) {
-            String aadhar = tfaadhar.getText();
+        if (e.getSource() == btnFetchButton) {
+            String aadhar = tfAadhar.getText();
 
             try {
-                DBConnection conn = new DBConnection();
+                DBConnection connection = new DBConnection();
 
                 String query = "select * from passenger where aadhar = '" + aadhar + "'";
 
-                ResultSet rs = conn.s.executeQuery(query);
+                ResultSet rs = connection.s.executeQuery(query);
                 if (rs.next()) {
-                    tfname.setText(rs.getString("name"));
-                    tfnationality.setText(rs.getString("nationality"));
-                    tfaddress.setText(rs.getString("address"));
-                    labelgender.setText(rs.getString("gender"));
+                    lblName.setText(rs.getString("Name"));
+                    lblNationality.setText(rs.getString("Nationality"));
+                    lblAddress.setText(rs.getString("Address"));
+                    lblGender.setText(rs.getString("Gender"));
                 } else {
                     JOptionPane.showMessageDialog(null, "Please enter correct aadhar");
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
-        } else if (e.getSource() == flight) {
+        } else if (e.getSource() == btnFlight) {
             String src = source.getSelectedItem();
             String dest = destination.getSelectedItem();
             try {
-                DBConnection conn = new DBConnection();
+                DBConnection connection = new DBConnection();
 
                 String query = "select * from flight where source = '" + src + "' and destination = '" + dest + "'";
 
-                ResultSet rs = conn.s.executeQuery(query);
+                ResultSet rs = connection.s.executeQuery(query);
 
                 if (rs.next()) {
-                    labelfname.setText(rs.getString("f_name"));
-                    labelfcode.setText(rs.getString("f_code"));
+                    lblFlightName.setText(rs.getString("Flight_Name"));
+                    lblFlightCode.setText(rs.getString("Flight_Code"));
                 } else {
                     JOptionPane.showMessageDialog(null, "No Flights Found");
                 }
             } catch (Exception ex) {
                 ex.printStackTrace();
             }
-        } else {
+        } else if (e.getSource() == btnBookFlight) {
             Random random = new Random();
-            String aadhar = tfaadhar.getText();
-            String name = tfname.getText();
-            String nationality = tfnationality.getText();
-            String flightname = labelfname.getText();
-            String flightcode = labelfcode.getText();
+            String aadhar = tfAadhar.getText();
+            String name = lblName.getText();
+            String nationality = lblNationality.getText();
+            String flightname = lblFlightName.getText();
+            String flightcode = lblFlightCode.getText();
             String src =  source.getSelectedItem();
             String dest =  destination.getSelectedItem();
             String ddate =  ((JTextField) dcdate.getDateEditor().getUiComponent()).getText();
 
+            String price = "";
+
             try {
-                DBConnection conn = new DBConnection();
+                DBConnection connection = new DBConnection();
+                String priceQuery = "SELECT price FROM flight WHERE Flight_Code = '" + flightcode + "'";
+                ResultSet rsPrice = connection.s.executeQuery(priceQuery);
+                if (rsPrice.next()) {
+                    price = "Rs " +rsPrice.getString("price");
+                }
+            } catch (Exception ex) {
+                ex.printStackTrace();
+            }
+
+
+            try {
+                DBConnection connection = new DBConnection();
 
                 String query = "INSERT INTO reservation VALUES (" +
-                        "'PNR-" + random.nextInt(1000000) + "', " +
-                        "'TIC-" + random.nextInt(10000) + "', " +
+                        "'" + "PNR-" + random.nextInt(1000000) + "', " +
+                        "'" + "TIC-" + random.nextInt(10000) + "', " +
                         "'" + aadhar + "', " +
                         "'" + name + "', " +
                         "'" + nationality + "', " +
@@ -230,9 +244,12 @@ public class BookFlight extends JFrame implements ActionListener {
                         "'" + flightcode + "', " +
                         "'" + src + "', " +
                         "'" + dest + "', " +
-                        "'" + ddate + "')";
+                        "'" + ddate + "', " +
+                        "'" + price + "'" +
+                        ")";
 
-                 conn.s.executeUpdate(query);
+
+                connection.s.executeUpdate(query);
 
                     JOptionPane.showMessageDialog(null, "Ticket Booked Successfully");
 

@@ -19,9 +19,9 @@ import java.util.*;
     public class BoardingPass extends JFrame implements ActionListener {
 
 
-        JTextField tfpnr;
-        JLabel tfname, tfnationality, lblsrc, lbldest, labelfname, labelfcode, labeldate;
-        JButton fetchButton;
+        JTextField tfPnr;
+        JLabel lblName, lblNationality, lblSource, lblDestination, lblFlightName, lblFlightCode, lblDate, lblPrice;
+        JButton btnFetchButton;
 
         public BoardingPass() {
 
@@ -34,89 +34,98 @@ import java.util.*;
             add(heading);
 
             JLabel subheading = new JLabel("Boarding Pass");
-            subheading.setBounds(360, 50, 300, 30);
+            subheading.setBounds(380, 50, 300, 30);
             subheading.setFont(new Font("Tahoma", Font.PLAIN, 24));
             subheading.setForeground(Color.BLUE);
             add(subheading);
 
-            JLabel lblaadhar = new JLabel("PNR DETAILS");
-            lblaadhar.setBounds(60, 110, 150, 25);
-            lblaadhar.setFont(new Font("Tahoma", Font.PLAIN, 16));
-            add(lblaadhar);
+            JLabel lblpnr = new JLabel("PNR DETAILS");
+            lblpnr.setBounds(60, 110, 150, 25);
+            lblpnr.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            add(lblpnr);
 
-            tfpnr = new JTextField();
-            tfpnr.setBounds(220, 110, 150, 25);
-            add(tfpnr);
+            tfPnr = new JTextField();
+            tfPnr.setBounds(220, 110, 150, 25);
+            add(tfPnr);
 
-            fetchButton = new JButton("ENTER");
-            fetchButton.setBackground(Color.BLACK);
-            fetchButton.setForeground(Color.WHITE);
-            fetchButton.setBounds(390, 110, 100, 25);
-            fetchButton.addActionListener(this);
-            add(fetchButton);
+            btnFetchButton = new JButton("ENTER");
+            btnFetchButton.setBackground(Color.BLACK);
+            btnFetchButton.setForeground(Color.WHITE);
+            btnFetchButton.setBounds(390, 110, 100, 25);
+            btnFetchButton.addActionListener(this);
+            add(btnFetchButton);
 
             JLabel lblname = new JLabel("NAME");
             lblname.setBounds(60, 160, 150, 25);
             lblname.setFont(new Font("Tahoma", Font.PLAIN, 16));
             add(lblname);
 
-            tfname = new JLabel();
-            tfname.setBounds(220, 160, 200, 25);
-            add(tfname);
+            lblName = new JLabel();
+            lblName.setBounds(220, 160, 200, 25);
+            add(lblName);
 
             JLabel lblnationality = new JLabel("NATIONALITY");
             lblnationality.setBounds(60, 200, 150, 25);
             lblnationality.setFont(new Font("Tahoma", Font.PLAIN, 16));
             add(lblnationality);
 
-            tfnationality = new JLabel();
-            tfnationality.setBounds(220, 200, 200, 25);
-            add(tfnationality);
+            lblNationality = new JLabel();
+            lblNationality.setBounds(220, 200, 200, 25);
+            add(lblNationality);
 
-            JLabel lbladdress = new JLabel("SRC");
-            lbladdress.setBounds(60, 240, 150, 25);
-            lbladdress.setFont(new Font("Tahoma", Font.PLAIN, 16));
-            add(lbladdress);
+            JLabel lblsource = new JLabel("SRC");
+            lblsource.setBounds(60, 240, 150, 25);
+            lblsource.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            add(lblsource);
 
-            lblsrc = new JLabel();
-            lblsrc.setBounds(220, 240, 150, 25);
-            add(lblsrc);
+            lblSource = new JLabel();
+            lblSource.setBounds(220, 240, 150, 25);
+            add(lblSource);
 
-            JLabel lblgender = new JLabel("DEST");
-            lblgender.setBounds(400, 240, 100, 25);
-            lblgender.setFont(new Font("Tahoma", Font.PLAIN, 16));
-            add(lblgender);
+            JLabel lbldestination = new JLabel("DEST");
+            lbldestination.setBounds(400, 240, 100, 25);
+            lbldestination.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            add(lbldestination);
 
-            lbldest = new JLabel();
-            lbldest.setBounds(550, 240, 150, 25);
-            add(lbldest);
+            lblDestination = new JLabel();
+            lblDestination.setBounds(550, 240, 150, 25);
+            add(lblDestination);
 
-            JLabel lblfname = new JLabel("Flight Name");
-            lblfname.setBounds(60, 280, 150, 25);
-            lblfname.setFont(new Font("Tahoma", Font.PLAIN, 16));
-            add(lblfname);
+            JLabel lblflightname = new JLabel("Flight Name");
+            lblflightname.setBounds(60, 280, 150, 25);
+            lblflightname.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            add(lblflightname);
 
-            labelfname = new JLabel();
-            labelfname.setBounds(220, 280, 150, 25);
-            add(labelfname);
+            lblFlightName = new JLabel();
+            lblFlightName.setBounds(220, 280, 150, 25);
+            add(lblFlightName);
 
-            JLabel lblfcode = new JLabel("Flight Code");
-            lblfcode.setBounds(400, 280, 150, 25);
-            lblfcode.setFont(new Font("Tahoma", Font.PLAIN, 16));
-            add(lblfcode);
+            JLabel lblflightcode = new JLabel("Flight Code");
+            lblflightcode.setBounds(400, 280, 150, 25);
+            lblflightcode.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            add(lblflightcode);
 
-            labelfcode = new JLabel();
-            labelfcode.setBounds(550, 280, 150, 25);
-            add(labelfcode);
+            lblFlightCode = new JLabel();
+            lblFlightCode.setBounds(550, 280, 150, 25);
+            add(lblFlightCode);
 
             JLabel lbldate = new JLabel("DATE");
             lbldate.setBounds(60, 320, 150, 25);
             lbldate.setFont(new Font("Tahoma", Font.PLAIN, 16));
             add(lbldate);
 
-            labeldate = new JLabel();
-            labeldate.setBounds(220, 320, 200, 25);
-            add(labeldate);
+            lblDate = new JLabel();
+            lblDate.setBounds(220, 320, 200, 25);
+            add(lblDate);
+
+            JLabel lblprice = new JLabel("PRICE");
+            lblprice.setBounds(60, 360, 150, 25);
+            lblprice.setFont(new Font("Tahoma", Font.PLAIN, 16));
+            add(lblprice);
+
+            lblPrice = new JLabel();
+            lblPrice.setBounds(220, 360, 200, 25);
+            add(lblPrice);
 
 
             ImageIcon i1 = new ImageIcon(ClassLoader.getSystemResource("FlightReservationSystem/icons1/icons/airindia.png"));
@@ -133,8 +142,8 @@ import java.util.*;
         }
 
         public void actionPerformed(ActionEvent e) {
-            if (e.getSource() == fetchButton) {
-                String pnr = tfpnr.getText();
+            if (e.getSource() == btnFetchButton) {
+                String pnr = tfPnr.getText();
 
                 try {
                     DBConnection conn = new DBConnection();
@@ -143,13 +152,14 @@ import java.util.*;
 
                     ResultSet rs = conn.s.executeQuery(query);
                     if (rs.next()) {
-                        tfname.setText(rs.getString("name"));
-                        tfnationality.setText(rs.getString("nationality"));
-                        lblsrc.setText(rs.getString("src"));
-                        lbldest.setText(rs.getString("des"));
-                        labelfname.setText(rs.getString("flightname"));
-                        labelfcode.setText(rs.getString("flightcode"));
-                        labeldate.setText(rs.getString("ddate"));
+                        lblName.setText(rs.getString("name"));
+                        lblNationality.setText(rs.getString("nationality"));
+                        lblSource.setText(rs.getString("source"));
+                        lblDestination.setText(rs.getString("destination"));
+                        lblFlightName.setText(rs.getString("flightname"));
+                        lblFlightCode.setText(rs.getString("flightcode"));
+                        lblDate.setText(rs.getString("date"));
+                        lblPrice.setText(rs.getString("price"));
                     } else {
                         JOptionPane.showMessageDialog(null, "Please enter correct aadhar");
                     }

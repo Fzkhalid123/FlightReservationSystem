@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7c2a3029-f52c-4a48-a494-2c0100c55b21" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightreservationsystem/BoardingPass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightreservationsystem/BoardingPass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightreservationsystem/BookFlight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightreservationsystem/BookFlight.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightreservationsystem/Cancel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightreservationsystem/Cancel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightreservationsystem/Home.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightreservationsystem/Home.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightreservationsystem/JourneyDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightreservationsystem/JourneyDetails.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/flightreservationsystem/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/flightreservationsystem/Login.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,29 +37,42 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Abc1.executor": "Run",
-    "Application.AddCustomer.executor": "Run",
-    "Application.BoardingPass.executor": "Run",
-    "Application.BookFlight.executor": "Run",
-    "Application.Cancel.executor": "Run",
-    "Application.FlightInfo.executor": "Run",
-    "Application.Home.executor": "Run",
-    "Application.JourneyDetails.executor": "Run",
-    "Application.Login.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/fzkha/Downloads/jcalendar-tz-1.3.3-4.jar",
-    "onboarding.tips.debug.path": "C:/Users/fzkha/IdeaProjects/FlightReservationSystem/src/Main.java",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Abc1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.AddCustomer.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BoardingPass.executor&quot;: &quot;Run&quot;,
+    &quot;Application.BookFlight.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Cancel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FlightInfo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Home.executor&quot;: &quot;Run&quot;,
+    &quot;Application.JourneyDetails.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Login.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/fzkha/Downloads/jcalendar-tz-1.3.3-4.jar&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/fzkha/IdeaProjects/FlightReservationSystem/src/Main.java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Artifacts&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.Home">
+    <configuration name="AddCustomer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flightreservationsystem.AddCustomer" />
+      <module name="FlightReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flightreservationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BoardingPass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="flightreservationsystem.BoardingPass" />
       <module name="FlightReservationSystem" />
@@ -67,8 +86,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Cancel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flightreservationsystem.Cancel" />
+    <configuration name="BookFlight" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flightreservationsystem.BookFlight" />
+      <module name="FlightReservationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="flightreservationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlightInfo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="flightreservationsystem.FlightInfo" />
       <module name="FlightReservationSystem" />
       <extension name="coverage">
         <pattern>
@@ -93,39 +125,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="JourneyDetails" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flightreservationsystem.JourneyDetails" />
-      <module name="FlightReservationSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="flightreservationsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Login" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="flightreservationsystem.Login" />
-      <module name="FlightReservationSystem" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="flightreservationsystem.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Home" />
-        <item itemvalue="Application.Login" />
         <item itemvalue="Application.BoardingPass" />
-        <item itemvalue="Application.JourneyDetails" />
-        <item itemvalue="Application.Cancel" />
+        <item itemvalue="Application.BookFlight" />
+        <item itemvalue="Application.AddCustomer" />
+        <item itemvalue="Application.FlightInfo" />
       </list>
     </recent_temporary>
   </component>

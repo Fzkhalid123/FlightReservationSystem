@@ -7,44 +7,44 @@
    import java.sql.ResultSet;
 
    public class Login extends JFrame implements ActionListener {
-            JButton submit, reset, close;
-            JTextField textforusername;
-            JPasswordField textforpassword;
+            JButton btnSubmit, btnReset, btnClose;
+            JTextField tfUsername;
+            JPasswordField tfPassword;
 
             public Login() {
             getContentPane().setBackground(Color.WHITE);
             setLayout(null);
 
-            JLabel labelusername = new JLabel("Username");
-            labelusername.setBounds(20, 20, 100, 20);
-            add(labelusername);
+            JLabel lblUsername = new JLabel("Username");
+            lblUsername.setBounds(20, 20, 100, 20);
+            add(lblUsername);
 
-            textforusername = new JTextField();
-            textforusername.setBounds(130, 20, 200, 20);
-            add(textforusername);
+            tfUsername = new JTextField();
+            tfUsername.setBounds(130, 20, 200, 20);
+            add(tfUsername);
 
-            JLabel labelpassword = new JLabel("Password");
-                labelpassword.setBounds(20, 60, 100, 20);
-            add(labelpassword);
+            JLabel lblPassword = new JLabel("Password");
+            lblPassword.setBounds(20, 60, 100, 20);
+            add(lblPassword);
 
-            textforpassword = new JPasswordField();
-            textforpassword.setBounds(130, 60, 200, 20);
-            add(textforpassword);
+            tfPassword = new JPasswordField();
+            tfPassword.setBounds(130, 60, 200, 20);
+            add(tfPassword);
 
-            reset = new JButton("Reset");
-            reset.setBounds(40, 120, 120, 20);
-            reset.addActionListener(this);
-            add(reset);
+            btnReset = new JButton("Reset");
+            btnReset.setBounds(40, 120, 120, 20);
+            btnReset.addActionListener(this);
+            add(btnReset);
 
-            submit = new JButton("Submit");
-            submit.setBounds(190, 120, 120, 20);
-            submit.addActionListener(this);
-            add(submit);
+            btnSubmit = new JButton("Submit");
+            btnSubmit.setBounds(190, 120, 120, 20);
+            btnSubmit.addActionListener(this);
+            add(btnSubmit);
 
-            close = new JButton("Close");
-            close.setBounds(120, 160, 120, 20);
-            close.addActionListener(this);
-            add(close);
+            btnClose = new JButton("Close");
+            btnClose.setBounds(120, 160, 120, 20);
+            btnClose.addActionListener(this);
+            add(btnClose);
 
             setLocation(1000, 250);
             setSize(400, 250);
@@ -52,10 +52,10 @@
         }
 
         public void actionPerformed(ActionEvent actionevent) {
-            if (actionevent.getSource() == submit) {
+            if (actionevent.getSource() == btnSubmit) {
 
-                String username = textforusername.getText();
-                String password = textforpassword.getText();
+                String username = tfUsername.getText();
+                String password = tfPassword.getText();
 
                 try {
                     DBConnection c = new DBConnection();
@@ -76,11 +76,11 @@
                 }
             }
 
-           else if (actionevent.getSource() == close) {
+           else if (actionevent.getSource() == btnClose) {
                 setVisible(false);
-            } else if (actionevent.getSource() == reset) {
-                textforusername.setText("");
-                textforpassword.setText("");
+            } else if (actionevent.getSource() == btnReset) {
+                tfUsername.setText("");
+                tfPassword.setText("");
 
             }
         }
